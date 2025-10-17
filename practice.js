@@ -49,6 +49,10 @@ console.log("Uppercase Fruits:", upperCaseFruits);
 console.log("Long Named Fruits:", longNamedFruits);
 console.log("Reversed Fruits:", reversedFruits);
    
+function hello(){
+  console.log("Hello World");
+}
+hello()
 
 function IFSUser(username) {
   console.log("Hello, " + username + "! IFS Academy.");
@@ -56,6 +60,28 @@ function IFSUser(username) {
 
 IFSUser("pranav"); 
 
+function oddeven(num1){
+  if (num1 % 2 ==0){
+    console.log("The number is even");
+  }else{
+    console.log("The number is odd");
+  }
+}
+oddeven(12)
+
+function factorial(num2) {
+  if (num2 == 0 || num2 == 1) {
+    console.log("The number is not valid, enter another number");
+  } else {
+    let fact = 1;
+    for (let i = 1; i <= num2; i++) {
+      fact = fact * i;
+    }
+    console.log(fact);
+  }
+}
+
+factorial(5);
 
 function addNumbers(a, b) {
   let total = a + b;
@@ -91,3 +117,30 @@ if (average >= 90) {
 }
 
 
+let su=function(a,b){
+  return a+b;
+}
+console.log(su(19,22));
+
+let di=function(a,b){
+  return a/b;
+}
+
+let muy=function(a,b){
+  return a*b;
+}
+
+function operation(operate,a,b){
+  return operate(a,b);
+}
+
+console.log(operation(di,2,3));
+console.log(operation(muy,2,7));
+
+let yi=(p,q) => {
+  return p**q;
+}
+console.log(yi(2,7));
+
+let yis=(o,p) => o+p;
+console.log(yis(1,2))
